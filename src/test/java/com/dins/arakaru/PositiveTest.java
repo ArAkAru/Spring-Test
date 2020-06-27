@@ -22,8 +22,6 @@ import org.springframework.http.ResponseEntity;
 public class PositiveTest{
 	private TestRestTemplate restTemplate;
 	
-	
-
 	@BeforeEach
 	void init() {
 		restTemplate = new TestRestTemplate();
