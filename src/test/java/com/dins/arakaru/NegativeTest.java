@@ -29,8 +29,6 @@ public class NegativeTest {
 		User symbols = new User("\n\r\t","Arut");
 		response = restTemplate.postForEntity("http://localhost:8080/users", symbols, User.class);
 		assertThat(response.getStatusCode(), is(HttpStatus.BAD_REQUEST));
-		
-		
 	}
 	
 	@Test
